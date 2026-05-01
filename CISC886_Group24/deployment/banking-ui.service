@@ -1,0 +1,15 @@
+[Unit]
+Description=Smart Banking AI - Gradio UI (CISC 886 G24)
+After=network.target banking-api.service
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/banking
+Environment="PATH=/home/ubuntu/banking/banking-env/bin:/usr/bin:/bin"
+ExecStart=/home/ubuntu/banking/banking-env/bin/python3 /home/ubuntu/banking/app.py
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
