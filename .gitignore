@@ -1,0 +1,37 @@
+# Model artifacts (too large for Git, hosted on S3)
+*.gguf
+*.bin
+*.safetensors
+
+# Dataset files (downloaded at build time)
+*.csv
+*.parquet
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+banking-env/
+*.egg-info/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+logs/
+
+# AWS
+.aws/
